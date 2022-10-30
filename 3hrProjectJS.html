@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tracking expense</title>
+</head>
+<body>
+    <form action="#" onsubmit="onsignup(e)">
+
+       <label for="expense">ExpenseAmount:</label>
+       <input type="number" id="expense" name="expense" required>
+
+       <label for="description">Description:</label>
+       <input type="text" id="description" name="description" required>
+
+       <label for="category">Category:</label>
+       <select id="category" name="category">
+          <option value="fuel">Fuel</option>
+          <option value="food">Food</option>
+          <option value="electricity">Electricity</option>
+          <option value="movie">Movie</option>
+       </select>
+       <button class="btn">Add Expense</button>
+    </form>
+    <ul id="output"></ul>
+    <script src="3hrProjectJS.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+</body>
+</html>
